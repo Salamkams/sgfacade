@@ -2,6 +2,8 @@
 
 <ul>
   <% @projects.each do |project| %>
-    <li><%= project %></li>
+    <li>
+      <%= project[:name] %> (<%= project[:stage] %>)
+      </li>
   <% end %>
 </ul>

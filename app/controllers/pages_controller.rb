@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def home
-    @today = Date.today + 1
-    @projects = ["Expo2020", "JBR", "JLT", "Marina"]
+    @today = Date.today
+
   end
 
   def team
