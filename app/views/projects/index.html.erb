@@ -1,9 +1,15 @@
-<h1 class="text-center">All Projects</h1>
+<h1>All Projects</h1>
+
+<p>
+  <%= link_to "Return to home page", root_path, class: "btn btn-primary" %>
+</p>
+
 
 <ul>
   <% @projects.each do |project| %>
     <li>
-      <%= project.name %> (<%= project.stage %>)
+      <%= link_to project.name, project_path(project) %> (<%= project.stage %>)
       </li>
   <% end %>
 </ul>
+
