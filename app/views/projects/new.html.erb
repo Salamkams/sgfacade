@@ -4,12 +4,7 @@
 
       <h1 class="text-center">Add a project</h1>
 
-      <%= simple_form_for @project do |f| %>
-        <%= f.input :name, placeholder:"Expo 2020", label:"Choose a project name" %>
-        <%= f.input :stage, placeholder:"Design", label:"Detail the project stage"%>
-        <%= f.button :submit, "Add", class:"btn btn-primary" %>
-
-      <% end %>
+      <%= render "form "%>
 
   <!--     <form action="/projects" method="post">
         <div class="form-group">
