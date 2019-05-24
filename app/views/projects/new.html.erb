@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+
+      <h1 class="text-center">Add a project</h1>
+
+      <%= simple_form_for @project do |f| %>
+        <%= f.input :name, placeholder:"Expo 2020", label:"Choose a project name" %>
+        <%= f.input :stage, placeholder:"Design", label:"Detail the project stage"%>
+        <%= f.button :submit, "Add", class:"btn btn-primary" %>
+
+      <% end %>
+
+  <!--     <form action="/projects" method="post">
+        <div class="form-group">
+          <label for="name">Choose a project name</label>
+          <input type="text" name="project[name]" class="form-control" placeholder="Expo 2020">
+        </div>
+        <div class="form-group">
+          <label for="stage">Detail the project stage</label>
+          <input type="text" name="project[stage]" class="form-control" placeholder="Design">
+        </div>
+        <input type="submit" value="Add" class="btn btn-primary" >
+      </form> -->
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
