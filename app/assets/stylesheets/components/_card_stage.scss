@@ -1,0 +1,28 @@
+.card-stage {
+  display: block;
+  text-align: center;
+  line-weight: 20px;
+  font-weight: bold;
+  color: white;
+  font-size: 24px;
+  line-height: 200px;
+}
+
+.card-stage:hover {
+  color: white;
+}
+
+
+.card-stage.design {
+  background: $green;
+}
+
+.card-stage.construction {
+  background: $red;
+}
+
+.card-stage.finished {
+  background: $purple;
+}
+
+

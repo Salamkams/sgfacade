@@ -3,7 +3,11 @@ class ProjectsController < ApplicationController
 
 
   def index
-    @projects = Project.all
+    if params[:stage]
+      @projects = Project.where(stage: params[:stage])
+    else
+      @projects = Project.all
+    end
   end
 
   def show
@@ -41,7 +45,7 @@ class ProjectsController < ApplicationController
 
   private
   def project_params
-    params.require(:project).permit(:name, :stage)
+    params.require(:project).permit(:name, :stage, :description)
   end
 
   def find_project

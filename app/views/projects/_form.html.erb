@@ -1,6 +1,7 @@
       <%= simple_form_for @project do |f| %>
         <%= f.input :name, placeholder:"Expo 2020", label:"Choose a project name" %>
-        <%= f.input :stage, placeholder:"Design", label:"Detail the project stage"%>
+        <%= f.input :stage, collection: ["design", "construction", "finished"], prompt: "Detail the project stage"%>
+        <%= f.input :description, placeholder:"A project with sustainable products", label:"Describe your project"%>
         <%= f.button :submit, "Add", class:"btn btn-primary" %>
 
       <% end %>
